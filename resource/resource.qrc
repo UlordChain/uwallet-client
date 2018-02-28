@@ -1,0 +1,64 @@
+<RCC>
+    <qresource prefix="/style">
+        <file alias="bwallet">style/bwallet.qss</file>
+    </qresource>
+    <qresource prefix="/qm">
+        <file alias="zh_CN">qm/zh_CN.qm</file>
+        <file alias="qt_zh_CN">qm/qt_zh_CN.qm</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file alias="addresses1">images/addresses1.png</file>
+        <file alias="addresses2">images/addresses2.png</file>
+        <file alias="addresses3">images/addresses3.png</file>
+        <file alias="bigbutton1">images/bigbutton.png</file>
+        <file alias="bigbutton2">images/bigbutton2.png</file>
+        <file alias="bigbutton3">images/bigbutton3.png</file>
+        <file alias="bigbutton4">images/bigbutton4.png</file>
+        <file alias="close1">images/close1.png</file>
+        <file alias="close2">images/close2.png</file>
+        <file alias="close3">images/close3.png</file>
+        <file alias="folder1">images/folder1.png</file>
+        <file alias="folder2">images/folder2.png</file>
+        <file alias="folder3">images/folder3.png</file>
+        <file alias="history1">images/history1.png</file>
+        <file alias="history2">images/history2.png</file>
+        <file alias="history3">images/history3.png</file>
+        <file alias="max1">images/max1.png</file>
+        <file alias="max2">images/max2.png</file>
+        <file alias="max3">images/max3.png</file>
+        <file alias="min1">images/min1.png</file>
+        <file alias="min2">images/min2.png</file>
+        <file alias="min3">images/min3.png</file>
+        <file alias="password1">images/password1.png</file>
+        <file alias="password2">images/password2.png</file>
+        <file alias="password3">images/password3.png</file>
+        <file alias="receive1">images/receive1.png</file>
+        <file alias="receive2">images/receive2.png</file>
+        <file alias="receive3">images/receive3.png</file>
+        <file alias="seed1">images/seed1.png</file>
+        <file alias="seed2">images/seed2.png</file>
+        <file alias="seed3">images/seed3.png</file>
+        <file alias="send1">images/send1.png</file>
+        <file alias="send2">images/send2.png</file>
+        <file alias="send3">images/send3.png</file>
+        <file alias="setting1">images/setting1.png</file>
+        <file alias="setting2">images/setting2.png</file>
+        <file alias="setting3">images/setting3.png</file>
+        <file alias="smallbutton1">images/smallbutton1.png</file>
+        <file alias="smallbutton 2">images/smallbutton 2.png</file>
+        <file alias="smallbutton3">images/smallbutton3.png</file>
+        <file alias="www1">images/www1.png</file>
+        <file alias="www2">images/www2.png</file>
+        <file alias="www3">images/www3.png</file>
+        <file alias="heisemengban">images/黑色蒙板.png</file>
+        <file alias="baisemengban">images/白色蒙板.png</file>
+        <file alias="redball">images/redball.png</file>
+        <file alias="greenball">images/greenball.png</file>
+        <file alias="logo">images/logo.png</file>
+        <file alias="ico">images/logo.ico</file>
+        <file alias="down">images/down.png</file>
+    </qresource>
+    <qresource prefix="/font">
+        <file alias="Roboto-Medium">font/Roboto-Medium.ttf</file>
+    </qresource>
+</RCC>

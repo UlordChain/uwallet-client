@@ -1,0 +1,269 @@
+QWidget
+{
+    outline:none;  /*去掉控件获得焦点时的虚线框*/
+    color: #4c4c4c;
+    /*不仅对文本框选中有效果, 对dock拖动时的半透明背景也有效果(第二点不支持渐变色,应该是BUG)*/
+    selection-background-color:#68cac1;
+}
+QMainWindow
+{
+    background-color: #f5f5f5;
+}
+QStackedWidget
+{
+    background-color:white;
+}
+QAbstractItemView
+{
+    outline:none;  /*去掉系统虚线框(https://my.oschina.net/guomingliang/blog/337169)*/
+    alternate-background-color: #f5f5f5; /*交替色*/
+}
+QHeaderView::section
+{
+    background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:0 white,stop:1 #C0C0C0);
+    padding-left: 3px;
+    border: 1px solid #f5f5f5;
+    border-top:0px;
+    border-bottom:0px;
+    border-left:0px;
+    height:25px;
+}
+QTreeView {
+    border:none;
+    show-decoration-selected: 1; /* 将item行前的空白区域一起选中*/
+}
+QTreeView::item {
+    image:none;  /*去掉 单元格选中后失去焦点时 虚线框*/
+    selection-color: #4c4c4c; /*选中时的文字颜色*/
+}
+QTreeView::item:hover {
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #DCDCDC, stop: 0.5 #DCDCDC,stop: 0.6 #DCDCDC,stop: 1 #DCDCDC);
+}
+QTreeView::item:selected {
+    /*background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #68CAC1, stop: 1 #4BA49C); */
+    background-color: #68CAC1;
+}
+/*branch表示item行前空白 http://qtdebug.com/qtbook-qss-subcontrol/ */
+QTreeView::branch:hover {
+    background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #DCDCDC, stop: 1 #DCDCDC);
+}
+QTreeView::branch:selected {
+    /*background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #68CAC1, stop: 1 #4BA49C); */
+    background-color: #68CAC1;
+}
+
+
+/*设置按钮通用样式*/
+QPushButton
+{
+    border:none;
+    height:34px;
+    border-image: url(:/images/bigbutton1);
+}
+QPushButton:hover
+{
+    color:white;
+    border-image: url(:/images/bigbutton2);
+}
+QPushButton:pressed
+{
+    color:white;
+    border-image: url(:/images/bigbutton3);
+}
+QPushButton:!enabled
+{
+    border-image: url(:/images/bigbutton4);
+}
+/*设置最小化按钮的样式*/
+
+QPushButton#btn_min
+{
+    border-image: url(:/images/min1);
+}
+QPushButton#btn_min:hover
+{
+    border-image: url(:/images/min2);
+}
+QPushButton#btn_min:pressed
+{
+    border-image: url(:/images/min3);
+}
+
+/*设置最大化按钮的样式*/
+QPushButton#btn_max
+{
+    border-image: url(:/images/max1);
+}
+QPushButton#btn_max:hover
+{
+    border-image: url(:/images/max2);
+}
+QPushButton#btn_max:pressed
+{
+    border-image: url(:/images/max3);
+}
+
+/*设置关闭按钮的样式*/
+QPushButton#btn_close
+{
+    border-image: url(:/images/close1);
+}
+QPushButton#btn_close:hover
+{
+    border-image: url(:/images/close2);
+}
+QPushButton#btn_close:pressed
+{
+    border-image: url(:/images/close3);
+}
+
+/*设置password按钮的样式*/
+QPushButton#btn_password
+{
+    border-image: url(:/images/password1);
+}
+QPushButton#btn_password:hover
+{
+    border-image: url(:/images/password2);
+}
+QPushButton#btn_password:pressed
+{
+    border-image: url(:/images/password3);
+}
+
+/*设置setting按钮的样式*/
+QPushButton#btn_setting
+{
+    border-image: url(:/images/setting1);
+}
+QPushButton#btn_setting:hover
+{
+    border-image: url(:/images/setting2);
+}
+QPushButton#btn_setting:pressed
+{
+    border-image: url(:/images/setting3);
+}
+
+/*设置seed按钮的样式*/
+QPushButton#btn_seed
+{
+    border-image: url(:/images/seed1);
+}
+QPushButton#btn_seed:hover
+{
+    border-image: url(:/images/seed2);
+}
+QPushButton#btn_seed:pressed
+{
+    border-image: url(:/images/seed3);
+}
+
+/*设置network按钮的样式*/
+QPushButton#btn_network
+{
+    border-image: url(:/images/redball);
+}
+
+/*设置自定义菜单栏悬浮以及按下样式*/
+QPushButton#btn_file,QPushButton#btn_wallet,QPushButton#btn_view, 
+QPushButton#btn_tools,QPushButton#btn_help
+{
+    border-image:none;
+    border:0px;
+    width:40px;
+}
+QPushButton#btn_file:hover,QPushButton#btn_wallet:hover,QPushButton#btn_view:hover,
+QPushButton#btn_tools:hover,QPushButton#btn_help:hover
+{
+    /*font:bold;*/
+    color:#68CAC1;
+}
+QPushButton#btn_file:pressed,QPushButton#btn_wallet:pressed,QPushButton#btn_view:pressed,
+QPushButton#btn_tools:pressed,QPushButton#btn_help:pressed
+{
+    color:#4BA49C;
+}
+
+
+/*去掉QToolButton的边框*/
+QToolButton{
+    border:0px;
+}
+
+/*设置文本框样式*/
+QLineEdit,QTextEdit
+{
+    height:30px;
+    background-color: #f5f5f5;
+    padding: 1px;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    selection-background-color:#68cac1;
+}
+QLineEdit:focus,QTextEdit:focus
+{
+    border: 1px solid #68cac1;
+}
+
+/*设置自定义菜单栏样式*/
+QMenu
+{
+    border: none;
+}
+QMenu::item
+{
+    padding: 2px 20px 2px 25px;
+}
+QMenu::item:selected {
+    background-color: #68cac1;
+}
+
+#settingWD
+{
+    background-color:blue;
+}
+
+/*stting设置页面*/
+QPushButton#btn_help,QPushButton#btn_setting_appearance,QPushButton#btn_setting_fees
+{
+    border-image:none;
+    border:0px;
+}
+QPushButton#btn_setting_appearance:hover,QPushButton#btn_setting_fees:hover
+{
+    color:#68CAC1;
+}
+QPushButton#btn_setting_appearance:pressed,QPushButton#btn_setting_fees:pressed
+{
+    color:#4BA49C;
+}
+
+/*设置下拉框样式*/
+QComboBox
+{
+    height:25px;
+    background-color: #f5f5f5;
+    padding-left: 10px;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+}
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border: 0px;
+ }
+QComboBox::down-arrow
+{
+    border-image: url(:/images/down);
+}
+QComboBox::down-arrow:pressed
+{
+    top:1px;
+}
+QComboBox:focus
+{
+    border: 1px solid #68cac1;
+}
