@@ -111,7 +111,7 @@ class BwalletMainWindow(QMainWindow, Ui_bwalletMW):
 
         QTimer.singleShot(0, self.init_check)
 
-        langindx = self.read_language_conf()
+        #langindx = self.read_language_conf()
 
         # lang = 'zh_CN'
         # if langindx =='0':
@@ -283,7 +283,7 @@ class BwalletMainWindow(QMainWindow, Ui_bwalletMW):
             lang = 'en_US'
         elif index == '1':
             lang = 'zh_CN'
-        self.write_language_conf(index)
+        #self.write_language_conf(index)
 
         # 每次设置语言之前, 删掉上一次设置的语言
         if isinstance(self.qt_tr, QTranslator):
