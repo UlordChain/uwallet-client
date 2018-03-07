@@ -175,7 +175,12 @@ class BwalletMainWindow(QMainWindow, Ui_bwalletMW):
     def init_daemon(self):
         """启动daemon"""
         # daemon不能在线程中启动, 不然各种奇怪的问题, 比如修改密码
-        self.bwallet_main('daemon', 'start', '--client')
+        # self.bwallet_main('daemon', 'start', '--client')
+        import multiprocessing
+        sys.argv=sys.argv[:1]
+        sys.argv.append('daemon')
+        sys.argv.append('start')
+        multiprocessing.Process(target=main).start()
         self.command_walker.start()
 
     ################################## 通用方法 ##################################
@@ -515,7 +520,7 @@ class BwalletMainWindow(QMainWindow, Ui_bwalletMW):
         # 关闭对应服务
         self.tray.hide()  # 隐藏托盘图标
         # 不用手工关闭, 钱包模块已经实现了干净的关闭daemon线程的操作
-        # self.stop_daemon()  # 关闭daemon服务
+        self.stop_daemon()  # 关闭daemon服务
         if self.command_walker.isRunning():
             self.command_walker.stop()
             self.command_walker.wait()

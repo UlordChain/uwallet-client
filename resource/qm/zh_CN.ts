@@ -30,7 +30,7 @@ Use this dialog to add a password to your wallet.</source>
         <source>Your bnc are password protected. 
 However, your wallet file is not encrypted. 
 Use this dialog to change your passowrd.</source>
-        <translation type="unfinished">您的UT是有密码保护的
+        <translation type="unfinished">您的tULD是有密码保护的
 但是, 您的钱包文件没有加密 
 在这里更改您的密码</translation>
     </message>

@@ -17,7 +17,7 @@ RECOMMENDED_CLAIMTRIE_HASH_CONFIRMS = 1
 NO_SIGNATURE = 'ff'
 
 NULL_HASH = '0000000000000000000000000000000000000000000000000000000000000000'
-HEADER_SIZE = 112
+HEADER_SIZE = 140
 BLOCKS_PER_CHUNK = 96   #1d / 150s
 
 HEADERS_URL = "" #TODO add
@@ -34,11 +34,11 @@ blockchain_params = {
     'unet_main': {
         'pubkey_address': 0,
         'script_address': 5,
-        'pubkey_address_prefix': 68,   #85
-        'script_address_prefix': 63,   #122 204
-        'genesis_hash': '000064440d74c1ebea3234a8d778fbb49267ded6b11fe7117dc6f6d41d8cf705',
-        'max_target': 0x00007fffff000000000000000000000000000000000000000000000000000000,#0x00ffffffff000000000000000000000000000000000000000000000000000000,#0x0007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,
-        'genesis_bits': 0x1e1d1459,      #0x1f00ffff
+        'pubkey_address_prefix': 130,#68,
+        'script_address_prefix': 125,#63,
+        'genesis_hash': '000e0979b2a26db104fb4d8c2c8d572919a56662cecdcadc3d0583ac8d548e23',
+        'max_target': 0x000fffffff000000000000000000000000000000000000000000000000000000,#0x00ffffffff000000000000000000000000000000000000000000000000000000,#0x0007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,
+        'genesis_bits': 0x1f0fffff, #0x1e1d1459,      #0x1f00ffff
         'target_timespan': 150           #150
     },
     'unet_test': {

@@ -226,7 +226,7 @@ class Ui_titleWD(object):
     def retranslateUi(self, titleWD):
         titleWD.setWindowTitle(_translate("titleWD", "Form", None))
         self.lbl_balance_title.setText(_translate("titleWD", "Balance: ", None))
-        self.lbl_balance_unit.setText(_translate("titleWD", " UT", None))
+        self.lbl_balance_unit.setText(_translate("titleWD", " tULD", None))
         self.btn_file.setText(_translate("titleWD", "&File", None))
         self.btn_wallet.setText(_translate("titleWD", "&Wallet", None))
         self.btn_view.setText(_translate("titleWD", "&View", None))
