@@ -28,10 +28,10 @@ def set_config(c):
 #TODO: modifi ip 
 DEFAULT_CONFIG = {
     'default_servers': {
-        '47.75.4.172': {'t': '50001'},
+        '114.67.37.2': {'t': '10579'},
     },
     'chain': 'unet_main'
-}
+}# '47.75.4.172': {'t': '50001'},
 
 
 class SimpleConfig(object):

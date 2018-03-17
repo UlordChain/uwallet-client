@@ -175,12 +175,12 @@ class BwalletMainWindow(QMainWindow, Ui_bwalletMW):
     def init_daemon(self):
         """启动daemon"""
         # daemon不能在线程中启动, 不然各种奇怪的问题, 比如修改密码
-        # self.bwallet_main('daemon', 'start', '--client')
-        import multiprocessing
-        sys.argv=sys.argv[:1]
-        sys.argv.append('daemon')
-        sys.argv.append('start')
-        multiprocessing.Process(target=main).start()
+        self.bwallet_main('daemon', 'start', '--client')
+        # import multiprocessing
+        # sys.argv=sys.argv[:1]
+        # sys.argv.append('daemon')
+        # sys.argv.append('start')
+        # multiprocessing.Process(target=main).start()
         self.command_walker.start()
 
     ################################## 通用方法 ##################################

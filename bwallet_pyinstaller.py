@@ -17,7 +17,7 @@ if __name__ == '__main__':
     # --upx-dir upx加壳压缩(需要单独下载upx), 放到此文件同目录下会自动找到upx.exe(都不需要专门注明此参数)
     # -y 打包生成的文件直接覆盖上一次生成
     # --add-data: 添加数据文件. 格式为 源;目标
-    params = ['UwalletClient.py', '-w','--icon=BwalletClient.ico',
+    params = ['UwalletClient.py', '-c','--icon=BwalletClient.ico',
               '--version-file=UwalletClient.txt',
               '-y', '--add-data=uwallet/wordlist;uwallet/wordlist']
     run(params)
