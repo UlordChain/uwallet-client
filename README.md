@@ -1,3 +1,6 @@
+# This version is no longer supported. Please use uwallet-client-pro.
+# go to https://github.com/UlordChain/uwallet-client-pro
+
 ### UWallet client UI  ###
 
 Use Python2.7 + PyQt4.11
